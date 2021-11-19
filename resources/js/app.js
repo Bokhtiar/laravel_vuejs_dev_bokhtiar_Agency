@@ -12,6 +12,7 @@ import { routes } from './route';
 
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('admin-main', require('./components/admin/adminMain.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

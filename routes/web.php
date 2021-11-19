@@ -18,4 +18,8 @@ Route::group([ "as"=>'user.' , "prefix"=>'user' , "namespace"=>'User' , "middlew
 
 Route::group([ "as"=>'admin.' , "prefix"=>'admin' , "namespace"=>'Admin' , "middleware"=>['auth','admin']],function(){
     Route::get('/dashboard', [App\Http\Controllers\Admin\AdminDashboardController::class, 'index'])->name('dashboard');
+    Route::get('/web/setting/{id}', [App\Http\Controllers\Admin\WebSettingController::class, 'edit']);
+    Route::post('web/setting/update/{id}', [App\Http\Controllers\Admin\WebSettingController::class, 'update']);
 });
+
+

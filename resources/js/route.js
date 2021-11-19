@@ -4,4 +4,12 @@ export const routes = [
         component: () => import('./components/ExampleComponent.vue'),
     },
 
+
+    //admin
+    {
+        path:'/web/setting/:id',
+        component: () => import('./components/admin/webSetting/index.vue'),
+    },
+
+
 ]

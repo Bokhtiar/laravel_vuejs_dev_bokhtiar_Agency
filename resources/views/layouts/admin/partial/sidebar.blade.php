@@ -39,15 +39,15 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fa fa-pie-chart"></i>
               <p>
-                Category
+                Web-Setting
                 <i class="right fa fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <router-link to="/category" class="nav-link">
+                <router-link to="/web/setting/1" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Categories</p>
+                  <p>Web-Settings</p>
                 </router-link>
               </li>
             </ul>
